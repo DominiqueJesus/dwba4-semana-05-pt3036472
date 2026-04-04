@@ -6,7 +6,7 @@
 
         <meta charset="UTF-8"/>
 
-        <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon"/>
 
         <style>
             #top_nav {
@@ -21,32 +21,124 @@
     <body>
 
         <header>
+
             <nav id="top_nav">
                 <p>
                 <a href="../index.html">HOME | </a>
+                <a href="EVENTOS.html">EVENTOS | </a>
                 <a href="CONTATO.html">CONTATO | </a>
-                <a href="SOBRE.html">SOBRE </a>
+                <a href="SOBRE.html">SOBRE | </a>
+                <a href="ENTRAR.html">ENTRAR </a>
                 </p>
             </nav>
+
             <br/>
-            <img id="Page_Top" src="../Imagens/Logo.jpg" alt="Logo do Instituto Federal de São Paulo" type="image/jpeg"/>
+            <img id="Page_Top" 
+            src="../Imagens/Logo.jpg" 
+            title="Instituto Federal de São Paulo" 
+            alt="Logo do Instituto Federal de São Paulo" 
+            type="image/jpeg"/>
             <br/>
+
         </header>
 
-        <section>
-            <h3>Entre em contato conosco em:</h3>
-            <ul>
-                <li><strong>TELEFONE:</strong></li>
-                <p>(11) 2504-0100</p>
-                <li><strong>ENDEREÇO ELETRÔNICO:</strong></li>
-                <p>cdi.ptb@ifsp.edu.br</p>
-            </ul>
-            <h3>Visite a nossa página em:</h3>
-            <ul>
-                <li><strong>PÁGINA INSTITUCIONAL NA INTERNET:</strong></li>
-                <p>http://ptb.ifsp.edu.br</p>
-            </ul>
-        </section>
+        <main>
+
+            <h1>Mande uma mensagem</h1>
+
+            <form>
+
+                <ul>
+
+                    <li>
+                    <label for="Nome">Nome</label>  
+                    <input type="text" name="Nome" id="Nome" required/>
+                    <br/>
+                    <br/>
+                    </li>
+                    
+                    <li>
+                    <label for="Email">E-Mail </label>
+                    <input type="email" name="Email" id="Email" required/>
+                    <br/>
+                    <br/>
+                    </li>
+
+                    <li>
+                    <label for="Telefone">Telefone </label>
+                    <input 
+                    type="text" 
+                    pattern="\(\d{2}\) \d{5}-\d{4}"
+                    title="Siga o modelo: (11) 99999-9999"
+                    placeholder="(11) 99999-9999" 
+                    name="Telefone"
+                    id="Telefone" 
+                    required/> (11) 99999-9999
+                    <br/>
+                    <br/>
+                    </li>
+
+                    <li>
+                    <label for="Assunto">Assunto </label> 
+                    <select name="Assunto" id="Assunto" required>
+
+                        <option value="" disabled selected>-- Selecione --</option>
+                        <option value="Reclamacao">Reclamação</option>
+                        <option value="Sugestao">Sugestão</option>
+
+                    </select>
+                    <br/>
+                    <br/>
+                    </li>
+
+                    <li>
+                        <label for="Mensagem">Mensagem </label>
+                        <br/>
+                        <textarea name="Mensagem" id="Mensagem" required></textarea>
+                        <br/>
+                        <br/>
+                    </li>
+                          
+                    <li>
+                        <fieldset>
+
+                            <legend>Opções de Resposta</legend>
+
+                            E-mail 
+                            <input type="checkbox" value="email" name="resposta"/>
+                            Telefone  
+                            <input type="checkbox" value="telefone" name="resposta"/>
+                        
+                        </fieldset>
+                        <br/>
+                        <br/>
+                    </li>
+
+                    <li>
+                    <input type="submit" value="Enviar"/> 
+                    </li>
+
+                </ul> 
+
+            </form>
+
+        </main>
+
+        <footer>
+        <br/>
+        <br/>
+            <a href="https://www.facebook.com/ifsppirituba/?locale=pt_BR">
+                <img src="../Imagens/facebook.png"
+                title="IFSP Facebook" 
+                alt="Ícone do Facebook do IFSP" 
+                type="image/png"  
+                width="50"/>
+            </a>
+        <br/>
+        <br/>
+        <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+        <br/>
+        </footer>
 
     </body>
 
