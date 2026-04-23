@@ -8,11 +8,7 @@
 
         <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon"/>
 
-        <style>
-            #top_nav {
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
 
         <title>dwba4-semana-04-pt3036472</title>
 
@@ -20,25 +16,33 @@
 
     <body>
 
-        <header>
-
-            <nav id="top_nav">
-                <p>
-                <a href="../index.html">HOME | </a>
-                <a href="EVENTOS.html">EVENTOS | </a>
-                <a href="CONTATO.html">CONTATO | </a>
-                <a href="SOBRE.html">SOBRE | </a>
-                <a href="ENTRAR.html">ENTRAR </a>
-                </p>
-            </nav>
+        <header id="page_top">
+           
+            <nav class="top_nav">
+                <button> <a a href="../index.html"> HOME </a> </button>
+                <button> <a href="EVENTOS.html"> EVENTOS </a> </button>
+                <button> <a href="CONTATO.html"> CONTATO </a> </button>
+                <div class="dropdown">
+                    <button class="dropbtn"> CURSOS </button>
+                        <div class="dropdown-content">
+                            <a href="../Cursos/ADS_info.html">Análise e Desenvolvimento de Sistemas</a>
+                            <a href="../Cursos/EngProd_info.html">Engenharia de Produção</a>
+                            <a href="../Cursos/GesTI_info.html">Gestão em Tecnologia da Informação</a>
+                            <a href="../Cursos/Letras_info.html">Letras</a>
+                            <a href="../Cursos/GesPub_info.html">Gestão Pública</a>
+                        </div>
+                </div>
+                <button> <a href="ENTRAR.html"> ENTRAR </a> </button>
+                <button id="nav_sobre"> <a href="SOBRE.html"> SOBRE</a> </button>
+            </nav> 
 
             <br/>
-            <img id="Page_Top" 
+
+            <img id="logoIFSP"
             src="../Imagens/Logo.jpg" 
             title="Instituto Federal de São Paulo" 
             alt="Logo do Instituto Federal de São Paulo" 
             type="image/jpeg"/>
-            <br/>
 
         </header>
 
@@ -48,20 +52,24 @@
 
             <form>
 
-                <label for="Usuario">Usuário </label> 
-                <input type="text" name="Usuario" id="Usuario" required/>
-                <br/>
-                <br/>
-                <label for="Senha">Senha </label>
-                <input type="password" name="Senha" id="Senha" required/>
-                <br/>
+                <div class="form_background">
+                    <label class="form_background" for="Usuario">Usuário </label> 
+                    <input type="text" name="Usuario" id="Usuario" required/>
+                </div>
+
                 <br/>
 
-                <input type="submit" value="Entrar"/>
-                <br/>
-                <br/>
-                <a href="CONTATO.html">Esqueci a senha</a>
+                <div class="form_background">
+                    <label class="form_background" for="Senha">Senha </label>
+                    <input type="password" name="Senha" id="Senha" required/>
+                </div>
 
+                <br/>
+
+                <div class="form_background">
+                    <input class="form_button" type="submit" value="Entrar"/> <br/>
+                    <a href="CONTATO.html">Esqueci a senha</a>
+                </div>
                 <br/>
 
             </form>
@@ -69,19 +77,22 @@
         </main>
 
         <footer>
-        <br/>
-        <br/>
-            <a href="https://www.facebook.com/ifsppirituba/?locale=pt_BR">
-                <img src="../Imagens/facebook.png"
-                title="IFSP Facebook" 
-                alt="Ícone do Facebook do IFSP" 
-                type="image/png"  
-                width="50"/>
-            </a>
-        <br/>
-        <br/>
-        <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
-        <br/>
+
+            <br/>
+            <br/>
+
+                <a href="https://www.facebook.com/ifsppirituba/?locale=pt_BR">
+                    <img src="../Imagens/facebook.png"
+                    title="IFSP Facebook" 
+                    alt="Ícone do Facebook do IFSP" 
+                    type="image/png"  
+                    width="50"/>
+                </a>
+
+            <br/>
+                <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+            <br/>
+            
         </footer>
 
     </body>

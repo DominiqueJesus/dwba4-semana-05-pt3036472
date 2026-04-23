@@ -8,11 +8,7 @@
 
         <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon"/>
 
-        <style>
-            #top_nav {
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
 
         <title>dwba4-semana-04-pt3036472</title>
 
@@ -20,24 +16,34 @@
 
     <body>
 
-        <header>
-            <nav id="top_nav">
-                <p>
-                <a href="../index.html">HOME | </a>
-                <a href="../Navegacao/EVENTOS.html">EVENTOS | </a>
-                <a href="../Navegacao/CONTATO.html">CONTATO | </a>
-                <a href="../Navegacao/SOBRE.html">SOBRE | </a>
-                <a href="../Navegacao/ENTRAR.html">ENTRAR </a>
-                </p>
-            </nav>
+        <header id="page_top">
+           
+            <nav class="top_nav">
+                <button> <a a href="../index.html"> HOME </a> </button>
+                <button> <a href="../Navegacao/EVENTOS.html"> EVENTOS </a> </button>
+                <button> <a href="../Navegacao/CONTATO.html"> CONTATO </a> </button>
+                <div class="dropdown">
+                    <button class="dropbtn"> CURSOS </button>
+                        <div class="dropdown-content">
+                            <a href="ADS_info.html">Análise e Desenvolvimento de Sistemas</a>
+                            <a href="EngProd_info.html">Engenharia de Produção</a>
+                            <a href="GesTI_info.html">Gestão em Tecnologia da Informação</a>
+                            <a href="Letras_info.html">Letras</a>
+                            <a href="GesPub_info.html">Gestão Pública</a>
+                        </div>
+                </div>
+                <button> <a href="../Navegacao/ENTRAR.html"> ENTRAR </a> </button>
+                <button id="nav_sobre"> <a href="../Navegacao/SOBRE.html"> SOBRE</a> </button>
+            </nav> 
 
             <br/>
-            <img id="Page_Top" 
+
+            <img id="logoIFSP"
             src="../Imagens/Logo.jpg" 
             title="Instituto Federal de São Paulo" 
             alt="Logo do Instituto Federal de São Paulo" 
             type="image/jpeg"/>
-            <br/>
+
         </header>
 
         <main>

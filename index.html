@@ -7,16 +7,7 @@
         <meta charset="UTF-8"/>
 
         <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon"/>
-
-        <style>
-            #top_nav {
-                text-align: right;
-            }
-
-            #evento {
-                margin-left: 50px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
 
         <title>dwba4-semana-04-pt3036472</title>
 
@@ -24,48 +15,48 @@
 
     <body>
 
-        <header>
-            <nav id="top_nav">
-                <p>
-                <a href="index.html">HOME | </a>
-                <a href="Navegacao/EVENTOS.html">EVENTOS | </a>
-                <a href="Navegacao/CONTATO.html">CONTATO | </a>
-                <a href="Navegacao/SOBRE.html">SOBRE | </a>
-                <a href="Navegacao/ENTRAR.html">ENTRAR </a>
-                </p>
-            </nav>
+        <header id="page_top">
+           
+            <nav class="top_nav">
+                <button> <a a href="index.html"> HOME </a> </button>
+                <button> <a href="Navegacao/EVENTOS.html"> EVENTOS </a> </button>
+                <button> <a href="Navegacao/CONTATO.html"> CONTATO </a> </button>
+                <div class="dropdown">
+                    <button class="dropbtn"> CURSOS </button>
+                        <div class="dropdown-content">
+                            <a href="Cursos/ADS_info.html">Análise e Desenvolvimento de Sistemas</a>
+                            <a href="Cursos/EngProd_info.html">Engenharia de Produção</a>
+                            <a href="Cursos/GesTI_info.html">Gestão em Tecnologia da Informação</a>
+                            <a href="Cursos/Letras_info.html">Letras</a>
+                            <a href="Cursos/GesPub_info.html">Gestão Pública</a>
+                        </div>
+                </div>
+                <button> <a href="Navegacao/ENTRAR.html"> ENTRAR </a> </button>
+                <button id="nav_sobre"> <a href="Navegacao/SOBRE.html"> SOBRE</a> </button>
+            </nav> 
 
             <br/>
-            <img id="Page_Top" 
+
+            <img id="logoIFSP"
             src="Imagens/Logo.jpg" 
             title="Instituto Federal de São Paulo" 
             alt="Logo do Instituto Federal de São Paulo" 
             type="image/jpeg"/>
+
         </header>
 
-        <nav>
-            <h4>Cursos:</h4>
-            
-            <ul>
-                <li><a href="Cursos/ADS_info.html">Análise e Desenvolvimento de Sistemas</a></li>
-                <li><a href="Cursos/EngProd_info.html">Engenharia de Produção</a></li>
-                <li><a href="Cursos/GesTI_info.html">Gestão em Tecnologia da Informação</a></li>
-                <li><a href="Cursos/Letras_info.html">Letras</a></li>
-                <li><a href="Cursos/GesPub_info.html">Gestão Pública</a></li>
-            </ul>
-
-        </nav>
-
         <aside>
-            <h4>Eventos</h4>
+
+            <h2 class="title">Acontece no IFSP!</h2>
 
             <img id="evento" src="Imagens/SEJA_RARO.jpg" alt="Slogan da palestra 'Seja Raro'" type="image/jpeg"  width="600"/>
             <br/>
-            <legend id="evento">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</legend>
+            <p id="legenda">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+        
         </aside>
 
         <main>
-            <h2>Sobre a Biblioteca</h2>
+<!--           <h2>Sobre a Biblioteca</h2>
 
             <a href="https://bvirtual.com.br/"><img src="Imagens/library.jpeg" alt="Logo da Biblioteca" type="image/jpeg"/></a>
             <br/>
@@ -75,31 +66,37 @@
             <h6>Publicado: Quarta-Feira, 14 de agosto de 2019</h6>
 
             <h2>Conheça o SUAP</h2>
-
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/yVbOcB1ryh0?si=SxAW-SSNeg8gr-bv" 
+-->         
+            <h2 class="title">Conheça os desafios de inovação</h2>
+            
+            <iframe
+                id="video-inicial"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/5g5LQe3m8Po?si=Wz2Q0qq_M75xFTaf" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
             </iframe>
+
             <br/>
             <br/>
             <br/>
+
         </main>
 
         <footer>
-            <a href="#Page_Top">
+
+            <a href="#page_top">
                 <img src="Imagens/MoveTop.png" 
                 title="Mover para o topo" 
                 alt="Ícone de seta apontando para o topo da página" 
                 type="image/png" 
                 width="50"/>
             </a>
-        <br/>
-        <br/>
-        <br/>
+
             <a href="https://www.facebook.com/ifsppirituba/?locale=pt_BR">
                 <img src="Imagens/facebook.png" 
                 title="IFSP Facebook" 
@@ -107,10 +104,14 @@
                 type="image/png"  
                 width="50"/>
             </a>
+
         <br/>
         <br/>
-        <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+
+            <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+        
         <br/>
+
         </footer>
 
     </body>
