@@ -36,8 +36,6 @@
                 <button id="nav_sobre"> <a href="SOBRE.html"> SOBRE</a> </button>
             </nav> 
 
-            <br/>
-
             <img id="logoIFSP"
             src="../Imagens/Logo.jpg" 
             title="Instituto Federal de São Paulo" 
@@ -62,29 +60,30 @@
                     </li>
                     
                     <li>
-                    <label for="Email">E-Mail </label>
-                    <input type="email" name="Email" id="Email" required/>
+                    <label for="Email">E-Mail </label> <br/>
+                    <input class="form_question" type="email" name="Email" id="Email" required/>
                     <br/>
                     <br/>
                     </li>
 
                     <li>
-                    <label for="Telefone">Telefone </label>
+                    <label for="Telefone">Telefone </label> (11) 99999-9999 <br/>
                     <input 
+                    class="form_question"
                     type="text" 
                     pattern="\(\d{2}\) \d{5}-\d{4}"
                     title="Siga o modelo: (11) 99999-9999"
                     placeholder="(11) 99999-9999" 
                     name="Telefone"
-                    id="Telefone" 
-                    required/> (11) 99999-9999
+                    id="Telefone"
+                    required/>
                     <br/>
                     <br/>
                     </li>
 
                     <li>
                     <label for="Assunto">Assunto </label> 
-                    <select name="Assunto" id="Assunto" required>
+                    <select class="form_dropbox" name="Assunto" id="Assunto" required>
 
                         <option value="" disabled selected>-- Selecione --</option>
                         <option value="Reclamacao">Reclamação</option>
@@ -98,7 +97,7 @@
                     <li>
                         <label for="Mensagem">Mensagem </label>
                         <br/>
-                        <textarea name="Mensagem" id="Mensagem" required></textarea>
+                        <textarea class="form_textog" name="Mensagem" id="Mensagem" required></textarea>
                         <br/>
                         <br/>
                     </li>
@@ -108,21 +107,18 @@
 
                             <legend>Opções de Resposta</legend>
 
-                            E-mail 
-                            <input type="checkbox" value="email" name="resposta"/>
+                            E-mail
+                            <input type="checkbox" value="email" name="Resposta"/>
                             Telefone  
-                            <input type="checkbox" value="telefone" name="resposta"/>
+                            <input type="checkbox" value="telefone" name="Resposta"/>
                         
                         </fieldset>
                         <br/>
-                        <br/>
-                    </li>
-
-                    <li>
-                    <input type="submit" value="Enviar"/> 
                     </li>
 
                 </ul> 
+
+                    <input class="form_button" type="submit" value="Enviar"/> 
 
             </form>
 
