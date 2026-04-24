@@ -7,17 +7,12 @@
 
 #page_top {
     background-color: #017f03;
-    margin-top: 1280px;
 }
 
 #nav_sobre {
-    margin-left: 1280px;
-    white-space: nowrap;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    padding: 6px;
+    top: 0px;
+    right: 0px;
 }
 
 #evento {
@@ -61,7 +56,6 @@
     padding: 16px;
     font-size: 16px;
     border: none;
-    text-align: right;
 }
 
 .top_nav button:hover {
