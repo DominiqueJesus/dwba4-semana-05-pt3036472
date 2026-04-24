@@ -10,6 +10,9 @@
 }
 
 #nav_sobre {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens pulem de linha */
+    justify-content: space-between; /* Distribui os itens */
     position: absolute;
     top: 0px;
     right: 0px;
