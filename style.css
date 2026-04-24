@@ -11,17 +11,21 @@
 }
 
 #nav_sobre {
-    margin-left: 68%;
-}
-
-#logoIFSP {
-    padding: 0px;
-    margin-top: 0px;
+    margin-left: 1280px;
+    white-space: nowrap;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    padding: 6px;
 }
 
 #evento {
     border-radius: 50%;
-    margin-left: 34%;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  /* Garante que a imagem não "estoure" o tamanho da tela no mobile */
 }
 
 #legenda {
@@ -32,13 +36,18 @@
 }
 
 #video-inicial {
-    margin-left: 35%;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  /* Garante que a imagem não "estoure" o tamanho da tela no mobile */
 }
 
 /* Layout de Navegação */
 
 .top_nav {
     background-color: #545454;
+    position: relative; /* Define o limite para o filho */
+    height: 50px;
 }
 
 .top_nav a {
