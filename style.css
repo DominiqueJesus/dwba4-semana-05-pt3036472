@@ -22,7 +22,10 @@
 
 #evento {
     border-radius: 50%;
-    margin-left: 650px;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  /* Garante que a imagem não "estoure" o tamanho da tela no mobile */
 }
 
 #legenda {
@@ -33,7 +36,10 @@
 }
 
 #video-inicial {
-    margin-left: 650px;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  /* Garante que a imagem não "estoure" o tamanho da tela no mobile */
 }
 
 /* Layout de Navegação */
