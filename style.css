@@ -11,9 +11,8 @@
 
 #nav_sobre {
     display: flex;
-    flex-wrap: nowrap; /* Impede que os itens pulem de linha */
-    justify-content: space-between; /* Distribui os itens */
-    position: absolute;
+    white-space: nowrap; /* Impede que os itens pulem de linha */
+    margin-left: auto;
     top: 0px;
     right: 0px;
 }
@@ -44,9 +43,8 @@
 
 .top_nav {
     display: flex;
-    flex-wrap: nowrap; /* Impede que os itens pulem de linha */
+    white-space: nowrap; /* Impede que os itens pulem de linha */
     background-color: #545454;
-    position: relative; /* Define o limite para o filho */
     height: 50px;
 }
 
