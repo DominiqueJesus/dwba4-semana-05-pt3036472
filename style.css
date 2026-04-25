@@ -43,6 +43,10 @@
 /* Layout de Navegação */
 
 .top_nav {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens pulem de linha */
+    justify-content: space-between; /* Distribui os itens */
+    align-items: center;
     background-color: #545454;
     position: relative; /* Define o limite para o filho */
     height: 50px;
