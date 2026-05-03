@@ -3,6 +3,68 @@
     padding: 10px;
 }
 
+/* Layout Responsivo */
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+    justify-items: center;
+    gap: auto;
+}
+
+.container div {
+    width: 100%;
+}
+
+.container img {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+.container p {
+    text-align: center;
+    font-size: 70%;
+    margin: 10px;
+}
+
+.container h5 {
+    text-align: center;
+    margin: -10px;
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: auto;
+    }
+
+    .container img {
+        display: block;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .container p {
+        text-align: center;
+        font-size: 50%;
+    }
+
+    .container h5 {
+        text-align: center;
+        font-size: 50%;
+        margin: auto;
+    }
+
+}
+
 /* Layout ID's - Tela Inicial  */
 
 #page_top {
